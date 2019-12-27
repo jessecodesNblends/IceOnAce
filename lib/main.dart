@@ -34,19 +34,19 @@ class HomePage extends StatelessWidget{
 								child: Text("IMG"),
 							),
 							Container(
-							  child: Row(
-							  	mainAxisAlignment: MainAxisAlignment.spaceBetween,
-							  	children: <Widget>[
-							  		Column(
-							  			crossAxisAlignment: CrossAxisAlignment.start,
-							  			children: <Widget>[
-							  				Text("Smoothie"),
-							  				Text("Mango"),
-							  				Text("Price", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)
-							  			],
-							  		),
-							  	],
-							  ),
+								child: Row(
+									mainAxisAlignment: MainAxisAlignment.spaceBetween,
+									children: <Widget>[
+										Column(
+											crossAxisAlignment: CrossAxisAlignment.start,
+											children: <Widget>[
+												Text("Smoothie"),
+												Text("Mango"),
+												Text("Price", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)
+											],
+										),
+									],
+								),
 							),
 						],
 					),
