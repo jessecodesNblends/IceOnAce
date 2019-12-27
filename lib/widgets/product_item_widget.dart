@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
+// Model imports
 import '../models/product.dart';
+import '../main.dart';
 
 class ProductItem extends StatelessWidget {
-	List<Pro>
+	final List<Product> products;
+	int index;
 
-	ProductItem();
+	ProductItem({this.products,});
 
 	@override
 	Widget build(BuildContext context) {
