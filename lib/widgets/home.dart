@@ -27,8 +27,16 @@ class HomeState extends State<Home> {
 		Product(title: "Brukutu", price: 2.50, type: "Smoothie"),
 		Product(title: "Vanilla Ice", price: 4.00, type: "Smoothie"),
 		Product(title: "Vodka Cream", price: 3.20, type: "Smoothie"),
+		Product(title: "Strawberry", price: 2.50, type: "Smoothie"),
+		Product(title: "Melon Ice", price: 4.00, type: "Smoothie"),
+		Product(title: "Blue Squash", price: 3.20, type: "Smoothie"),
+		Product(title: "Raspberry", price: 1.50, type: "Smoothie"),
+		Product(title: "Peach Mango Banana", price: 2.00, type: "Smoothie"),
+		Product(title: "Cantaloupe", price: 3.20, type: "Smoothie"),
+		Product(title: "Coconut water", price: 2.50, type: "Smoothie"),
+		Product(title: "Frozen Orange Juice", price: 4.00, type: "Smoothie"),
+		Product(title: "Mexican Coffee", price: 3.20, type: "Smoothie"),
 	];
-
 
 	@override
 	Widget build(BuildContext context) {
