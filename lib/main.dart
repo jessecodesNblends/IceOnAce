@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget{
 										color: Colors.white,
 			  							border: Border.all(width: 2, color: Colors.white),
 			  							borderRadius: BorderRadius.all(Radius.circular(32))),
-			  						child: Icon(Icons.code),
+			  						child: Icon(Icons.favorite, color: IceOnAceColours.GREEN,),
 			  					),
 			  					Text("Smoothies", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: IceOnAceColours.GREEN))
 			  				],
@@ -59,8 +59,11 @@ class HomePage extends StatelessWidget{
 			    			style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: IceOnAceColours.GREEN),
 			    		),
 			    		Container(
-			    			height: 90,
+			    			height: 86,
 			    			margin: EdgeInsets.fromLTRB(0, 4, 0, 24),
+							decoration: BoxDecoration(
+								borderRadius: BorderRadius.all(Radius.circular(8))
+							),
 			    			child: ListView.builder(
 			    				scrollDirection: Axis.horizontal,
 			    				itemCount: products.length,
@@ -68,10 +71,21 @@ class HomePage extends StatelessWidget{
 			    					return 
 			    					Card(
 			    						child: 
-			    						Container(
-			    							width: 125,
-			    							child: Text("IMG"),
-			    						),
+											Container(
+												alignment: Alignment.bottomLeft,
+												width: 100,
+												child: Container(
+													padding: EdgeInsets.all(4),
+													decoration: BoxDecoration(
+														color: IceOnAceColours.GREEN, 
+														borderRadius: BorderRadius.only(
+															bottomLeft: Radius.circular(5),
+															topRight: Radius.circular(8)
+														)
+													),
+													child:  Text(products[index].title, style: TextStyle(fontSize: 12, color: Colors.white),),
+												)
+											),
 			    					);
 			    				},
 			    			),
@@ -96,7 +110,8 @@ class HomePage extends StatelessWidget{
 			    									padding: EdgeInsets.symmetric(vertical: 24, horizontal: 32),
 			    									decoration: BoxDecoration(
 			    										border: Border.all(width: 2, color: IceOnAceColours.LIGHTLIME), 
-			    										borderRadius: BorderRadius.all(Radius.circular(8))),
+			    										borderRadius: BorderRadius.all(Radius.circular(8))
+													),
 			    									child: Text("IMG"),
 			    								),
 			    								Container(
