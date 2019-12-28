@@ -49,7 +49,7 @@ class Specialities extends StatelessWidget {
 											),
 											child: Text(
 												products[index].title, 
-												style: TextStyle(fontSize: 8, color: Colors.white),),
+												style: TextStyle(fontSize: 10, color: Colors.white),),
 										)
 									),
 							);

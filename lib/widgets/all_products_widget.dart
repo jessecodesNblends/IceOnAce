@@ -37,20 +37,28 @@ class AllProducts extends StatelessWidget {
 													),
 			    									child: Text("IMG"),
 			    								),
-			    								Container(
-			    									child: Row(
-			    										mainAxisAlignment: MainAxisAlignment.spaceBetween,
-			    										children: <Widget>[
-			    											Column(
-			    												crossAxisAlignment: CrossAxisAlignment.start,
-			    												children: <Widget>[
-			    													Text(products[index].type, style: TextStyle(color: IceOnAceColours.GREEN),),
-			    													Text(products[index].title, style: TextStyle(color: IceOnAceColours.GREEN),),
-			    													Text("${products[index].price.toStringAsFixed(2)}GH", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: IceOnAceColours.GREEN),)
-			    												],
-			    											),
-			    										],
-			    									),
+			    								Expanded(
+													child: Container(
+														child: Row(
+															mainAxisAlignment: MainAxisAlignment.spaceBetween,
+															children: <Widget>[
+																Column(
+																	crossAxisAlignment: CrossAxisAlignment.start,
+																	children: <Widget>[
+																		Text(products[index].type, style: TextStyle(color: IceOnAceColours.GREEN),),
+																		Text(products[index].title, style: TextStyle(color: IceOnAceColours.GREEN),),
+																		Text("${products[index].price.toStringAsFixed(2)}GH", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: IceOnAceColours.GREEN),)
+																	],
+																),
+																Column(	
+																	children: <Widget>[
+																		Icon(Icons.favorite_border, color: Colors.red,),
+																		Icon(Icons.star, color: IceOnAceColours.DESSERTRED,)
+																	],
+																),
+															],
+														),
+			    								  ),
 			    								),
 			    							],
 			    						);
