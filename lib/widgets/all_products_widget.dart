@@ -12,6 +12,7 @@ class AllProducts extends StatelessWidget {
 	@override
 	Widget build(BuildContext context) {
 		return Column(
+			crossAxisAlignment: CrossAxisAlignment.start,
 			children: <Widget>[
 				Text("All Products",
 			    			style: TextStyle(fontSize: 16, color: IceOnAceColours.GREEN),

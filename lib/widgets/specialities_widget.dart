@@ -23,7 +23,7 @@ class Specialities extends StatelessWidget {
 						color: IceOnAceColours.GREEN),
 			    ),
 				Container(
-					height: 86,
+					height: 100,
 					margin: EdgeInsets.fromLTRB(0, 4, 0, 24),
 					decoration: BoxDecoration(
 						borderRadius: BorderRadius.all(Radius.circular(8))
@@ -47,7 +47,9 @@ class Specialities extends StatelessWidget {
 													topRight: Radius.circular(8)
 												)
 											),
-											child:  Text(products[index].title, style: TextStyle(fontSize: 12, color: Colors.white),),
+											child: Text(
+												products[index].title, 
+												style: TextStyle(fontSize: 8, color: Colors.white),),
 										)
 									),
 							);
