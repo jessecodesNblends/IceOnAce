@@ -38,6 +38,12 @@ class Specialities extends StatelessWidget {
 									Container(
 										alignment: Alignment.bottomLeft,
 										width: 100,
+                    decoration: BoxDecoration(
+                       image: DecorationImage(
+                          image: AssetImage(products[index].image),
+                          fit: BoxFit.cover
+                        ),
+                    ),
 										child: Container(
 											padding: EdgeInsets.all(4),
 											decoration: BoxDecoration(

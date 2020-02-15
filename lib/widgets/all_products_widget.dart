@@ -24,18 +24,24 @@ class AllProducts extends StatelessWidget {
 			    				itemCount: products.length,
 			    				itemBuilder: (context, index) {
 			    					return 
-			    					// Card(
-			    					// 	child: 
+			    					Card(
+			    						child: 
 			    						Row(
 			    							children: <Widget>[
 			    								Container(
-			    									margin: EdgeInsets.fromLTRB(0, 8, 8, 8),
-			    									padding: EdgeInsets.symmetric(vertical: 24, horizontal: 32),
+			    									margin: EdgeInsets.fromLTRB(0, 0, 8, 0),
+			    									// padding: EdgeInsets.symmetric(vertical: 24, horizontal: 32),
 			    									decoration: BoxDecoration(
 			    										border: Border.all(width: 2, color: IceOnAceColours.LIGHTLIME), 
 			    										borderRadius: BorderRadius.all(Radius.circular(8))
-													),
-			    									child: Text("IMG"),
+													  ),
+			    									child: Container( 
+                              height: 70,
+                              child: Image.asset(
+                                products[index].image,
+                                fit: BoxFit.contain,
+                              )
+                            ) ,
 			    								),
 			    								Expanded(
 													child: Container(
@@ -61,8 +67,8 @@ class AllProducts extends StatelessWidget {
 			    								  ),
 			    								),
 			    							],
-			    						);
-			    					// );
+			    						)
+			    					);
 			    				}
 			    			),
 			    		),
