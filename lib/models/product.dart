@@ -4,10 +4,12 @@ class Product {
 	String title;
 	String type;
 	double price;
+  String image;
 
 	Product({
 		@required this.title, 
 		@required this.price,
-		@required this.type
+		@required this.type,
+    this.image
 	});
 }
